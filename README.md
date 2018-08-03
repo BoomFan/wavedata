@@ -10,7 +10,7 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5.
 
 1. Clone repository:
 ```
-git clone git@github.com:kujason/wavedata.git
+git clone git@github.com:BoomFan/wavedata.git
 ```
 
 2. Install Dependencies:
