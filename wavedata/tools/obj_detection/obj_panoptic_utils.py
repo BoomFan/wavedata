@@ -79,15 +79,15 @@ def read_labels(label_dir, img_idx, results=False):
     obj_list = []
 
     # Extract the list
-    if os.stat(label_dir + "/%06d.txt" % img_idx).st_size == 0:
+    if os.stat(label_dir + "/%12d.txt" % img_idx).st_size == 0:
         return
 
     if results:
-        p = np.loadtxt(label_dir + "/%06d.txt" % img_idx, delimiter=' ',
+        p = np.loadtxt(label_dir + "/%12d.txt" % img_idx, delimiter=' ',
                        dtype=str,
                        usecols=np.arange(start=0, step=1, stop=16))
     else:
-        p = np.loadtxt(label_dir + "/%06d.txt" % img_idx, delimiter=' ',
+        p = np.loadtxt(label_dir + "/%12d.txt" % img_idx, delimiter=' ',
                        dtype=str,
                        usecols=np.arange(start=0, step=1, stop=15))
 
